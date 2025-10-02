@@ -1,4 +1,8 @@
 numpy
 pandas
 seaborn
--e . # it will automatically trigar setup.py
+matplotlib
+scikit-learn
+catboost
+xgboost
+# -e . # it will automatically trigar setup.py
