@@ -1,1 +1,122 @@
-<h1>Welcome to the home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Performance Predictor</title>
+    <style>
+        /* ======== Global Styles ======== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            overflow: hidden;
+        }
+
+        /* ======== Main Container ======== */
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 50px 60px;
+            border-radius: 25px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            max-width: 600px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* ======== Heading Styles ======== */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            color: #f1f1f1;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        /* ======== Button Styles ======== */
+        .btn {
+            display: inline-block;
+            padding: 14px 40px;
+            font-size: 1rem;
+            color: #fff;
+            background: linear-gradient(90deg, #ff8c00, #ff3c00);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, #ff3c00, #ff8c00);
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4);
+        }
+
+        /* ======== Animation ======== */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ======== Footer ======== */
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #d3d3d3;
+        }
+
+        .heart {
+            color: #ff3c00;
+            animation: beat 1.2s infinite;
+        }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Student Exam Performance Indicator</h1>
+        <h2>Project by <b>Ashish Prajapati</b></h2>
+        <p>
+            This Machine Learning web app predicts a student's <b>Maths score</b> 
+            based on factors like gender, parental education, test preparation, and more.
+            <br><br>
+            Explore how data can help in improving student performance.
+        </p>
+        <a href="/predictdata" class="btn">Check Exam Performance</a>
+
+        <footer>
+            Made with <span class="heart">❤</span> by Ashish Prajapati
+        </footer>
+    </div>
+</body>
+</html>
